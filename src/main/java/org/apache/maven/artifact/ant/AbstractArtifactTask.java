@@ -451,7 +451,7 @@ public abstract class AbstractArtifactTask
                 
                 if (password != null) {
                     try {
-                        SecDispatcher securityDispatcher = (SecDispatcher) container.lookup(SecDispatcher.ROLE);
+                        SecDispatcher securityDispatcher = (SecDispatcher) container.lookup(SecDispatcher.ROLE, "maven");
                         password = securityDispatcher.decrypt(password);
                         authentication.setPassword(password);
                     } catch (SecDispatcherException e) {
