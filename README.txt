@@ -15,3 +15,5 @@ The test suite is contained in the file "build-tests.xml".  This can be run usin
 
 Note: some of the tests require a running ssh server.  How you start sshd will depend on your system.  
       For example on Fedora Linux, you can start the ssh deamon using "service sshd start"
+      
+      test
